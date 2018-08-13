@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .card-container{
+      height:300px;
+      width:300px;
+      border: 2px solid black;
+    }
+    .image img{
+      height:150px;
+      width:300px;
+    }
+  </style>
+
+</head>
+<body onload = fun()>
+  <div class="container card-container">
+    <div class="row">
+      <div class="card">
+        <!-- <button onclick="preload()"> hey</button> -->
+        <div class="image" id="image">
+            <img src="deepak.jpg" alt="Deepak">
+            <!-- <h1>hey</h1> -->
+        </div>
+        <div class="container">
+          <center><h4>Deepak Chawla</h4></center>
+           Animi, repellendus ut ea nam nesciunt qui modi, optio fuga perferendis earum veniam. Iure perferendis cumque quaerat praesentium officiis a, consectetur laborum?
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script>
+   var cardimage = document.getElementById("image");
+  function fun(){
+    setTimeout(()=>{
+      cardimage.innerHTML = "<p><center>hello</center></p>";
+      // cardimage.innerHTML = "<img src="d.jpg" alt="Deepak">";
+    // alert('hello');
+  },2000)
+
+}
+
+// function = preload()
+
+
+      </script>
+</body>
+</html>
